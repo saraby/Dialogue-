@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="CookingAppDomain" is_super_domain="true">
+  <goal type="perform" action="top">
+    <plan>
+      <forget_all/>
+      <findout type="alt_question">
+        <alt><perform action="french_omelette" /></alt>
+        <alt><perform action="caesar_salad" /></alt>
+      </findout>
+    </plan>
+  </goal>
+
+
+
+  
+  <goal type="perform" action="french_omelette">
+    <plan>
+      <assume_shared>
+        <proposition predicate="selected_recipe" value="omelette" />
+      </assume_shared>
+      <get_done action="crack_eggs" />
+      <get_done action="add_butter"/> 
+      <get_done action="stir_eggs" />
+      <get_done action="fold_omelette" />
+      <get_done action="into_plate" />
+      <inform>
+        <proposition predicate="food_ready" value="here_omelette" />
+      </inform>
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="stir_eggs">
+    <plan>
+      <get_done action="hold_fork" />
+      <get_done action="edges" />
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="caesar_salad">
+    <plan>
+      <assume_shared>
+        <proposition predicate="selected_recipe" value="salad" />
+      </assume_shared>
+      <get_done action="rinse_chicken" />
+      <get_done action="prepare_grill" />
+      <get_done action="cook_chicken" />
+      <get_done action="toast_bread" />
+      <get_done action="add_sauce" />
+      <get_done action="mix_all" />
+      <inform>
+        <proposition predicate="food_ready" value="here_salad" />
+      </inform>
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="toast_bread">
+    <plan>
+      <get_done action="shape" />
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="add_sauce">
+    <plan>
+      <get_done action="sauce_option" />
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="perform" action="sauce_option">
+    <plan>
+      <get_done action="prepare_sauce" />
+      <signal_action_completion />
+    </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="ingredient_amount">
+    <plan>
+      <bind type="wh_question" predicate="selected_ingredient" />
+
+      <if>
+        <proposition predicate="selected_recipe" value="omelette" />
+        <then>
+          <if>
+            <proposition predicate="selected_ingredient" value="butter" />
+              <then>
+                <inform>
+                  <proposition predicate="ingredient_amount" value="butter_amount" />
+                </inform>
+              </then>
+          </if>
+        </then>
+        
+        <else>
+          <if>
+            <proposition predicate="selected_ingredient" value="lettuce" />
+              <then>
+                <inform>
+                  <proposition predicate="ingredient_amount" value="lettuce_amount" />
+                </inform>
+              </then>
+            
+              <else>
+              <if>
+                <proposition predicate="selected_ingredient" value="parmesan" />
+                <then>
+                  <inform>
+                    <proposition predicate="ingredient_amount" value="parmesan_amount" />
+                  </inform>
+                </then>
+                
+                <else>
+                  <if>
+                    <proposition predicate="selected_ingredient" value="caesar_sauce" />
+                    <then>
+                      <inform>
+                        <proposition predicate="ingredient_amount" value="sauce_amount" />
+                      </inform>
+                    </then>
+                  </if>
+                </else>
+              </if>
+            </else>
+          </if> 
+        </else>
+      </if>
+  </plan>
+  </goal>
+
+  <goal type="resolve" question_type="wh_question" predicate="extra_ingredient">
+    <plan>
+      <if>
+        <proposition predicate="selected_recipe" value="omelette" />
+        <then>
+          <inform>
+            <proposition predicate="extra_ingredient" value="extra_omelette" />
+          </inform>
+        </then>
+        <else>
+          <inform>
+            <proposition predicate="extra_ingredient" value="extra_caesar" />
+          </inform>
+        </else>
+      </if>
+    </plan>
+  </goal>
+
+
+</domain>

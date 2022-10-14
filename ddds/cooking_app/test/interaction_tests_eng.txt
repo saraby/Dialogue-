@@ -1,0 +1,31 @@
+--- main menu
+
+--- French omelette
+U> I want to prepare a French omelette
+S> Crack three eggs on a bowl and whisk with a pinch of salt.
+U> done
+S> Heat butter or oil on a pan on high heat.
+U> done
+S> Add the egg mixture to the pan and stir the eggs for about 30 seconds.
+U> done
+S> When the eggs are set but look slightly wet, turn off the heat and fold the omelette.
+U> done
+S> After a few seconds, transfer the omelette onto a plate.
+U> done
+S> Amazing! You have finished preparing a French omelette. Bon appétit!.
+
+--- Caesar Salad
+U> I want to make a Caesar Salad
+S> First you need to bring a chicken breast and rinse it.
+U> done
+S> then you will put a baking paper on a heated grill and a little of olive oil or butter until it melts and sprinkle some salt, black pepper and on top of it.
+U> done
+S> put the chicken breast on the grill and sprinkle the spices on top of it. Let it cook for almost 15 minutes on each side.
+U> done
+S> toast the bread and then cut both the toast and the chicken breast.
+U> done
+S> get the caesar sauce ready to add it later.
+U> done
+S> cut the lettuce, add to it some caesar sauce and mix with the chicken breast and the toast then add some parmesan cheese.
+U> done
+S> Amazing! now you have the most delicious caesar salad ever. Bon appétit!.

@@ -1,0 +1,92 @@
+[
+    {
+        "current_plan_item": "ask(?set([goal(perform(french_omelette)), goal(perform(caesar_salad))]))",
+        "semantic_expression": "perform(french_omelette)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "French Omelette"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://img.youtube.com/vi/efRe84BTprc/hqdefault.jpg"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "ask(?set([goal(perform(french_omelette)), goal(perform(caesar_salad))]))",
+        "semantic_expression": "perform(caesar_salad)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Chicken Caesar Salad"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://www.thecookierookie.com/wp-content/uploads/2022/05/chicken-caesar-salad-1-801x1200.jpg"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?X.example_predicate(X), set([example_predicate(individual_1), example_predicate(individual_2), example_predicate(individual_3)]))",
+        "semantic_expression": "answer(example_predicate(individual_3))",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Another text to show on the button"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://another-image-url"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(perform(example_action_1)), goal(perform(example_action_2))]))",
+        "semantic_expression": "request(example_action_1)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Button text"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://image-url"
+                }
+            ]
+        }
+    },
+    {
+        "current_plan_item": "findout(?set([goal(perform(example_action_1)), goal(perform(example_action_2))]))",
+        "semantic_expression": "request(example_action_2)",
+        "alternative": {
+            "visual_information": [
+                {
+                    "attribute": "name",
+                    "type": "text/plain",
+                    "value": "Button text"
+                },
+                {
+                    "attribute": "image",
+                    "type": "image/jpeg",
+                    "value": "https://image-url"
+                }
+            ]
+        }
+    }
+]

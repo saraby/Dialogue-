@@ -1,0 +1,57 @@
+[
+    {
+        "semantic_expression": "answer(extra_ingredient(extra_omelette))",
+        "visual_information": [[
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Omelette with Mushrooms"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://www.thechunkychef.com/wp-content/uploads/2017/11/Cheesy-Mushroom-Omelet.jpg"
+            }
+        ],
+        [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Omelette with Cheese"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://natashaskitchen.com/wp-content/uploads/2022/02/Egg-Omelette-5-728x1091.jpg"
+            }
+        ]]
+    },
+    {
+        "semantic_expression": "answer(extra_ingredient(extra_caesar))",
+        "visual_information": [[
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Chicken Caesar Salad with Sweet Corn"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "http://www.howsweeteats.com/wp-content/uploads/2013/08/corncaeser-3.jpg"
+            }
+        ],
+        [
+            {
+                "attribute": "name",
+                "type": "text/plain",
+                "value": "Chicken Caesar Salad with Cherry Tomatoes"
+            },
+            {
+                "attribute": "image",
+                "type": "image/jpeg",
+                "value": "https://therecipecritic.com/wp-content/uploads/2017/07/0C4A9394.jpg"
+            }
+        ]]
+        
+    }
+]

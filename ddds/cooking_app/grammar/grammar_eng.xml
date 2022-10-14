@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+
+  <action name="top">
+    <one-of>
+      <item>main menu</item>
+      <item>top</item>
+      <item>beginning</item>
+      <item>cancel</item>
+      <item>forget it</item>
+      <item>never mind</item>
+      <item>abort</item>
+    </one-of>
+  </action>
+
+  <action name="up">
+    <one-of>
+      <item>up</item>
+      <item>back</item>
+      <item>go back</item>
+    </one-of>
+  </action>
+
+  <greeting>Welcome! you are on your way to be the next best chef!</greeting>
+
+
+  <action name="french_omelette">
+    <one-of>
+      <item>french omelette</item>
+      <item>I want to make french omelette</item>
+      <item>I want the recipe of a french omelette</item>
+      <item>how can I make a french omelette?</item>
+    </one-of>
+  </action>
+
+  <action name="caesar_salad">
+    <one-of>
+      <item>caesar salad</item>
+      <item>I want to make caesar salad</item>
+      <item>I want the recipe of the caesar salad</item>
+      <item>could you explain to me how to make a caesar salad?</item>
+    </one-of>
+  </action>
+
+  
+
+  <question speaker="user" predicate="ingredient_amount" type="wh_question">
+    <one-of>
+      <item>how much <slot predicate="selected_ingredient"/> should I use?</item>
+      <item>how much <slot predicate="selected_ingredient"/> does it need?</item>
+      <item>what is the amount of the <slot predicate="selected_ingredient"/>?</item>
+      <item>how much <slot predicate="selected_ingredient"/> should I use?</item>
+    </one-of>
+  </question>
+
+  <question speaker="user" predicate="extra_ingredient" type="wh_question">
+    <one-of>
+      <item>Do you suggest adding any other ingredients?</item>
+      <item>Could you help me suggesting to add other ingredients to the recipe?</item>
+      <item>What would be other suitable ingredients to the recipe?</item>
+      <item>I would love to add extra ingredients to the recipe, do you have any suggestions?</item>
+    </one-of>
+  </question>
+
+  <individual name="here_omelette">Amazing! You have finished preparing a French omelette. Bon appétit!</individual>
+  <individual name="here_salad">Amazing! now you have the most delicious caesar salad ever. Bon appétit!</individual>
+
+  <individual name="omelette">omelette</individual>
+  <individual name="salad">salad</individual>
+  
+  <individual name="butter">butter</individual>
+  <individual name="butter_amount">add one spoon of butter or oil</individual>
+
+  <individual name="lettuce">lettuce</individual>
+  <individual name="lettuce_amount">you will need half a lettuce</individual>
+
+  <individual name="parmesan">parmesan</individual>
+  <individual name="parmesan_amount">this is optional, but it's recommended to put almost one table spoon, either grated or ground</individual>
+
+  <individual name="caesar_sauce">caesar sauce</individual>
+  <individual name="sauce_amount">two table spoons is sufficeint</individual>
+
+  <individual name="extra_omelette" >of course! you can add some muchroom and cheese inside the omelette before you fold it</individual>
+  <individual name="extra_caesar" >of course! some people like to add half-cut cherry tomatoes or a can of sweet corn </individual>
+
+  <!-- <report action="french_omelette" status="ended">
+    <utterance>And now we are done/></utterance>
+  </report> -->
+</grammar>

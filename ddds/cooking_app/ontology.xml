@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="CookingAppOntology">
+
+    <sort name="is_served" />
+    <sort name="recipe" />
+    <sort name="ingredient"/>
+    <sort name="amount"/>
+
+    <action name="french_omelette" />
+    <action name="stir_eggs" />
+    
+    <action name="caesar_salad" />
+
+
+    <action name="toast_bread" />
+    <action name="add_sauce" />
+    <action name="sauce_option" />
+    <!-- <action name="prepare_grill" />
+    <action name="cook_chicken" /> -->
+
+    <predicate name="food_ready" sort="is_served"/>
+    <predicate name="selected_recipe" sort="recipe"/>
+    <predicate name="selected_ingredient" sort="ingredient" />
+    <predicate name="extra_ingredient" sort="ingredient" />
+    <predicate name="ingredient_amount" sort="amount" />
+
+    <individual name="here_omelette" sort="is_served" />
+    <individual name="here_salad" sort="is_served" />
+
+    <individual name="omelette" sort="recipe" />
+    <individual name="salad" sort="recipe" />
+
+    <individual name="butter" sort="ingredient" />
+    <individual name="butter_amount" sort="amount" />
+    
+    <individual name="lettuce" sort="ingredient" />
+    <individual name="lettuce_amount" sort="amount" />
+
+    <individual name="parmesan" sort="ingredient" />
+    <individual name="parmesan_amount" sort="amount" />
+
+    <individual name="caesar_sauce" sort="ingredient" />
+    <individual name="sauce_amount" sort="amount" />
+
+    <individual name="extra_omelette" sort="ingredient" />
+    <individual name="extra_caesar" sort="ingredient" />
+
+</ontology>
