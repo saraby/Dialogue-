@@ -1,4 +1,4 @@
-# Dialogue Systems 2 - ddd-orchestration
+# Dialogue Systems 2 - Lab3
 
 Baseline orchestration files prepared for the Dialogue Systems 2 course in the Master in Language Technology of the University of Gothenburg.
 
