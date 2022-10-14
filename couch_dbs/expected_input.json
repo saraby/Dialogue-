@@ -1,7 +1,7 @@
 [
     {
-        "current_plan_item": "ask(?set([goal(perform(french_omelette)), goal(perform(caesar_salad))]))",
-        "semantic_expression": "perform(french_omelette)",
+        "current_plan_item": "findout(?set([goal(perform(french_omelette)), goal(perform(caesar_salad))]))",
+        "semantic_expression": "request(french_omelette)",
         "alternative": {
             "visual_information": [
                 {
@@ -12,14 +12,14 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://img.youtube.com/vi/efRe84BTprc/hqdefault.jpg"
+                    "value": "https://makeitdairyfree.com/wp-content/uploads/2021/12/vegan-omelette-1-683x1024.jpg"
                 }
             ]
         }
     },
     {
-        "current_plan_item": "ask(?set([goal(perform(french_omelette)), goal(perform(caesar_salad))]))",
-        "semantic_expression": "perform(caesar_salad)",
+        "current_plan_item": "findout(?set([goal(perform(french_omelette)), goal(perform(caesar_salad))]))",
+        "semantic_expression": "request(caesar_salad)",
         "alternative": {
             "visual_information": [
                 {
@@ -30,7 +30,7 @@
                 {
                     "attribute": "image",
                     "type": "image/jpeg",
-                    "value": "https://www.thecookierookie.com/wp-content/uploads/2022/05/chicken-caesar-salad-1-801x1200.jpg"
+                    "value": "https://reciperunner.com/wp-content/uploads/2017/07/Grilled-Chicken-Caesar-Salad-Picture-680x1004.jpg"
                 }
             ]
         }

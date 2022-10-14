@@ -21,26 +21,34 @@ nlu:
     - how much [caesar sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"} should I use?
     - how much [lettuce]{"entity": "sort.ingredient", "value": "individual.lettuce"} should I use?
     - how much [of course! some people like to add half-cut cherry tomatoes or a can of sweet corn]{"entity": "sort.ingredient", "value": "individual.extra_caesar"} should I use?
-    - how much [of course! you can add some muchroom and cheese inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"} should I use?
+    - how much [of course! you can add some mushroom or cheese or both inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"} should I use?
+    - how much [parmesan cheese]{"entity": "sort.ingredient", "value": "individual.parmesan"} should I use?
     - how much [parmesan]{"entity": "sort.ingredient", "value": "individual.parmesan"} should I use?
+    - how much [sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"} should I use?
     - how much [butter]{"entity": "sort.ingredient", "value": "individual.butter"} does it need?
     - how much [caesar sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"} does it need?
     - how much [lettuce]{"entity": "sort.ingredient", "value": "individual.lettuce"} does it need?
     - how much [of course! some people like to add half-cut cherry tomatoes or a can of sweet corn]{"entity": "sort.ingredient", "value": "individual.extra_caesar"} does it need?
-    - how much [of course! you can add some muchroom and cheese inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"} does it need?
+    - how much [of course! you can add some mushroom or cheese or both inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"} does it need?
+    - how much [parmesan cheese]{"entity": "sort.ingredient", "value": "individual.parmesan"} does it need?
     - how much [parmesan]{"entity": "sort.ingredient", "value": "individual.parmesan"} does it need?
+    - how much [sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"} does it need?
     - what is the amount of the [butter]{"entity": "sort.ingredient", "value": "individual.butter"}?
     - what is the amount of the [caesar sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"}?
     - what is the amount of the [lettuce]{"entity": "sort.ingredient", "value": "individual.lettuce"}?
     - what is the amount of the [of course! some people like to add half-cut cherry tomatoes or a can of sweet corn]{"entity": "sort.ingredient", "value": "individual.extra_caesar"}?
-    - what is the amount of the [of course! you can add some muchroom and cheese inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"}?
+    - what is the amount of the [of course! you can add some mushroom or cheese or both inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"}?
+    - what is the amount of the [parmesan cheese]{"entity": "sort.ingredient", "value": "individual.parmesan"}?
     - what is the amount of the [parmesan]{"entity": "sort.ingredient", "value": "individual.parmesan"}?
+    - what is the amount of the [sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"}?
     - how much [butter]{"entity": "sort.ingredient", "value": "individual.butter"} should I use?
     - how much [caesar sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"} should I use?
     - how much [lettuce]{"entity": "sort.ingredient", "value": "individual.lettuce"} should I use?
     - how much [of course! some people like to add half-cut cherry tomatoes or a can of sweet corn]{"entity": "sort.ingredient", "value": "individual.extra_caesar"} should I use?
-    - how much [of course! you can add some muchroom and cheese inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"} should I use?
+    - how much [of course! you can add some mushroom or cheese or both inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"} should I use?
+    - how much [parmesan cheese]{"entity": "sort.ingredient", "value": "individual.parmesan"} should I use?
     - how much [parmesan]{"entity": "sort.ingredient", "value": "individual.parmesan"} should I use?
+    - how much [sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"} should I use?
 
 - intent: question::extra_ingredient
   examples: |
@@ -54,36 +62,40 @@ nlu:
     - [butter]{"entity": "sort.ingredient", "value": "individual.butter"}
     - [lettuce]{"entity": "sort.ingredient", "value": "individual.lettuce"}
     - [parmesan]{"entity": "sort.ingredient", "value": "individual.parmesan"}
+    - [parmesan cheese]{"entity": "sort.ingredient", "value": "individual.parmesan"}
+    - [sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"}
     - [caesar sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"}
-    - [of course! you can add some muchroom and cheese inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"}
+    - [of course! you can add some mushroom or cheese or both inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"}
     - [of course! some people like to add half-cut cherry tomatoes or a can of sweet corn]{"entity": "sort.ingredient", "value": "individual.extra_caesar"}
     - [Amazing! You have finished preparing a French omelette. Bon appétit!]{"entity": "sort.is_served", "value": "individual.here_omelette"}
     - [Amazing! now you have the most delicious caesar salad ever. Bon appétit!]{"entity": "sort.is_served", "value": "individual.here_salad"}
     - [add one spoon of butter or oil]{"entity": "sort.amount", "value": "individual.butter_amount"}
     - [you will need half a lettuce]{"entity": "sort.amount", "value": "individual.lettuce_amount"}
     - [this is optional, but it's recommended to put almost one table spoon, either grated or ground]{"entity": "sort.amount", "value": "individual.parmesan_amount"}
-    - [two table spoons is sufficeint]{"entity": "sort.amount", "value": "individual.sauce_amount"}
+    - [two table spoons is sufficient]{"entity": "sort.amount", "value": "individual.sauce_amount"}
     - [omelette]{"entity": "sort.recipe", "value": "individual.omelette"}
     - [salad]{"entity": "sort.recipe", "value": "individual.salad"}
     - yes [butter]{"entity": "sort.ingredient", "value": "individual.butter"}
-    - yes [this is optional, but it's recommended to put almost one table spoon, either grated or ground]{"entity": "sort.amount", "value": "individual.parmesan_amount"}
+    - yes [add one spoon of butter or oil]{"entity": "sort.amount", "value": "individual.butter_amount"}
     - no [lettuce]{"entity": "sort.ingredient", "value": "individual.lettuce"}
-    - no [two table spoons is sufficeint]{"entity": "sort.amount", "value": "individual.sauce_amount"}
+    - no [you will need half a lettuce]{"entity": "sort.amount", "value": "individual.lettuce_amount"}
 
 - intent: answer_negation
   examples: |
     - not [butter]{"entity": "sort.ingredient", "value": "individual.butter"}
     - not [lettuce]{"entity": "sort.ingredient", "value": "individual.lettuce"}
     - not [parmesan]{"entity": "sort.ingredient", "value": "individual.parmesan"}
+    - not [parmesan cheese]{"entity": "sort.ingredient", "value": "individual.parmesan"}
+    - not [sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"}
     - not [caesar sauce]{"entity": "sort.ingredient", "value": "individual.caesar_sauce"}
-    - not [of course! you can add some muchroom and cheese inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"}
+    - not [of course! you can add some mushroom or cheese or both inside the omelette before you fold it]{"entity": "sort.ingredient", "value": "individual.extra_omelette"}
     - not [of course! some people like to add half-cut cherry tomatoes or a can of sweet corn]{"entity": "sort.ingredient", "value": "individual.extra_caesar"}
     - not [Amazing! You have finished preparing a French omelette. Bon appétit!]{"entity": "sort.is_served", "value": "individual.here_omelette"}
     - not [Amazing! now you have the most delicious caesar salad ever. Bon appétit!]{"entity": "sort.is_served", "value": "individual.here_salad"}
     - not [add one spoon of butter or oil]{"entity": "sort.amount", "value": "individual.butter_amount"}
     - not [you will need half a lettuce]{"entity": "sort.amount", "value": "individual.lettuce_amount"}
     - not [this is optional, but it's recommended to put almost one table spoon, either grated or ground]{"entity": "sort.amount", "value": "individual.parmesan_amount"}
-    - not [two table spoons is sufficeint]{"entity": "sort.amount", "value": "individual.sauce_amount"}
+    - not [two table spoons is sufficient]{"entity": "sort.amount", "value": "individual.sauce_amount"}
     - not [omelette]{"entity": "sort.recipe", "value": "individual.omelette"}
     - not [salad]{"entity": "sort.recipe", "value": "individual.salad"}
 
@@ -273,7 +285,11 @@ nlu:
 
 - intent: report:done
   examples: |
-    - I'm done
+   - I'm done
+    - okay
+    - then
+    - what else
+    - now what
     - done
     - ready
     - it's ready
@@ -287,7 +303,7 @@ nlu:
     - okay next
     - next
     - next instruction
-
+    
 - intent: icm:per*neg
   examples: |
     - repeat

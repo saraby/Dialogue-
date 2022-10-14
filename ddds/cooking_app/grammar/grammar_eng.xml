@@ -74,13 +74,23 @@
   <individual name="lettuce">lettuce</individual>
   <individual name="lettuce_amount">you will need half a lettuce</individual>
 
-  <individual name="parmesan">parmesan</individual>
+  <individual name="parmesan">
+    <one-of>
+      <item>parmesan</item>
+      <item>parmesan cheese</item>
+    </one-of>
+  </individual>
   <individual name="parmesan_amount">this is optional, but it's recommended to put almost one table spoon, either grated or ground</individual>
 
-  <individual name="caesar_sauce">caesar sauce</individual>
-  <individual name="sauce_amount">two table spoons is sufficeint</individual>
+  <individual name="caesar_sauce">
+    <one-of>
+      <item>sauce</item>
+      <item>caesar sauce</item>
+    </one-of>
+  </individual>
+  <individual name="sauce_amount">two table spoons is sufficient</individual>
 
-  <individual name="extra_omelette" >of course! you can add some muchroom and cheese inside the omelette before you fold it</individual>
+  <individual name="extra_omelette" >of course! you can add some mushroom or cheese or both inside the omelette before you fold it</individual>
   <individual name="extra_caesar" >of course! some people like to add half-cut cherry tomatoes or a can of sweet corn </individual>
 
   <!-- <report action="french_omelette" status="ended">

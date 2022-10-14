@@ -1,57 +1,38 @@
 [
     {
         "semantic_expression": "answer(extra_ingredient(extra_omelette))",
-        "visual_information": [[
+        "visual_information": [ 
             {
                 "attribute": "name",
                 "type": "text/plain",
-                "value": "Omelette with Mushrooms"
+                "value": "Omelette with Mushrooms and Cheese"
             },
             {
                 "attribute": "image",
                 "type": "image/jpeg",
-                "value": "https://www.thechunkychef.com/wp-content/uploads/2017/11/Cheesy-Mushroom-Omelet.jpg"
+                "value": "https://www.recipetineats.com/wp-content/uploads/2017/09/Omelette-with-Mushrooms_1.jpg"
             }
-        ],
-        [
-            {
-                "attribute": "name",
-                "type": "text/plain",
-                "value": "Omelette with Cheese"
-            },
-            {
-                "attribute": "image",
-                "type": "image/jpeg",
-                "value": "https://natashaskitchen.com/wp-content/uploads/2022/02/Egg-Omelette-5-728x1091.jpg"
-            }
-        ]]
+        
+        ]
+        
     },
+
+ 
     {
         "semantic_expression": "answer(extra_ingredient(extra_caesar))",
-        "visual_information": [[
+        "visual_information": [
             {
                 "attribute": "name",
                 "type": "text/plain",
-                "value": "Chicken Caesar Salad with Sweet Corn"
+                "value": "Chicken Caesar Salad with Sweet Corn and Cherry Tomatoes (and other options)"
             },
             {
                 "attribute": "image",
                 "type": "image/jpeg",
-                "value": "http://www.howsweeteats.com/wp-content/uploads/2013/08/corncaeser-3.jpg"
+                "value": "https://assets.epicurious.com/photos/5f160782ef4667d512d4f9c5/1:1/w_2240,c_limit/CreoleCaesar_HERO_IG_v1_071520_9480.jpg"
             }
-        ],
-        [
-            {
-                "attribute": "name",
-                "type": "text/plain",
-                "value": "Chicken Caesar Salad with Cherry Tomatoes"
-            },
-            {
-                "attribute": "image",
-                "type": "image/jpeg",
-                "value": "https://therecipecritic.com/wp-content/uploads/2017/07/0C4A9394.jpg"
-            }
-        ]]
+        
+        ]
         
     }
 ]
